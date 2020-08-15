@@ -1,0 +1,33 @@
+{
+    "Validate return code 200": {
+        "url": "/authentication/{{user_id}}/keyboard",
+        "tipo": "GET",
+        "parametro": "",
+        "headers": {
+            "Ocp-Apim-Subscription-Key": "7929bc5aed4c4ff1b1d149c48470cda1"
+        },
+        "body": "",
+        "response": [
+            {
+                "Label": "7;3",
+                "Value": "a314a175-0c8b-409f-ab39-af468526c0ba"
+            },
+            {
+                "Label": "1;0",
+                "Value": "6ea1463e-572a-4976-99fa-6bcdb6aab389"
+            },
+            {
+                "Label": "8;4",
+                "Value": "4f1b361d-9afc-4466-88a2-961ab3178bbb"
+            },
+            {
+                "Label": "9;5",
+                "Value": "d01837ae-29ee-49d4-8b6b-aaeec1357eaa"
+            },
+            {
+                "Label": "6;2",
+                "Value": "392b79d2-9175-418e-8d04-270709af02e4"
+            }
+        ]
+    }
+}

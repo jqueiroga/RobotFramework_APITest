@@ -1,0 +1,20 @@
+{
+    "Validate return code 200": {
+        "url": "/authentication/97604451829/validate?partnerId={{partnerId}}&platformId={{platformId}}&documenttypeid={{doc}}",
+        "tipo": "GET",
+        "parametro": {
+            "partnerId": "3351746b-0edd-457e-9ce0-7ff55e6d93d4",
+            "platformId": "3351746b-0edd-457e-9ce0-7ff55e6d93d4",
+            "documenttypeid": "1"
+        },
+        "headers": {
+            "Ocp-Apim-Subscription-Key": "7929bc5aed4c4ff1b1d149c48470cda1"
+        },
+        "body": "",
+        "response": {
+            "Id": "4c7dd5e7-acf0-4dc5-9ae3-317d305df5d4",
+            "IsFirstAccess": false,
+            "NeedChangePassword": false
+        }
+    }
+}
