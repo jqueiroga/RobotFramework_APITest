@@ -1,6 +1,9 @@
 pipeline{
     agent {
-      label 'docker'
+        docker {
+            image 'ppodgorsek/robot-framework:latest'
+            args '--shm-size=1g -u root' 
+        }
     }
     
     stages{
