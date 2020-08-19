@@ -1,5 +1,7 @@
 pipeline{
-    agent any
+    agent {
+      label 'docker'
+    }
     
     stages{
         stage('Build'){
@@ -9,7 +11,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                sh "docker-compose run robot"
+                sh "docker-compose run test"
             }
         }
         stage('UAT'){
