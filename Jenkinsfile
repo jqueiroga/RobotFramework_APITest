@@ -1,6 +1,8 @@
 pipeline{
     agent {
-        label 'docker'
+      docker{
+        image 'robotframework'
+      }
     }
     
     stages{
