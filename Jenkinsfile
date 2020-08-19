@@ -9,13 +9,12 @@ pipeline{
         }
         stage('Test'){
             steps{
-                echo "Running progression tests"
+                sh "docker-compose run robot"
             }
         }
         stage('UAT'){
             steps{
                 echo "Wait for User Acceptance"
-                input(message: 'Go to production?', ok: 'Yes')
             }
         }
         stage('Prod'){
