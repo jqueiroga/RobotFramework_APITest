@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                sh "docker-compose run test"
+                sh "docker-compose up"
             }
         }
         stage('UAT'){
