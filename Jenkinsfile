@@ -1,7 +1,7 @@
 pipeline{
     agent {
         docker {
-            image 'ppodgorsek/robot-framework:latest'
+            image 'robotframewoek_apitest:latest'
             args '--shm-size=1g -u root' 
         }
     }
