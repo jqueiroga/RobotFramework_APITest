@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                sh "suiteRun.sh"
+                sh "./suiteRun.sh"
             }
         }
         stage('UAT'){
