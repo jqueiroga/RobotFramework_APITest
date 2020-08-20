@@ -8,15 +8,10 @@ pipeline{
             }
         }
         stage('APITest'){
-            agent {
-                docker {
-                    image 'robotframewoek_apitest:latest'
-                    args '--shm-size=1g -u root' 
-                 }
-             }
             steps{
-                sh "chmod 700 ./suiteRun.sh"
-                sh "./suiteRun.sh"
+                bash ''' #!/bin/bash
+                docker-compose up
+                '''
             }
         }
         stage('UAT'){
