@@ -1,10 +1,5 @@
 pipeline{
-    agent {
-        docker {
-            image 'robotframewoek_apitest:latest'
-            args '--shm-size=1g -u root' 
-        }
-    }
+    agent none
     
     stages{
         stage('Build'){
@@ -12,7 +7,13 @@ pipeline{
                 echo "Building or resolve Dependencies"
             }
         }
-        stage('Test'){
+        stage('APITest'){
+            agent {
+                docker {
+                    image 'robotframewoek_apitest:latest'
+                    args '--shm-size=1g -u root' 
+                 }
+             }
             steps{
                 sh "chmod 700 ./suiteRun.sh"
                 sh "./suiteRun.sh"
