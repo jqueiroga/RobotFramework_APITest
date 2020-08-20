@@ -9,15 +9,22 @@ This installation also contains Requests library for Robot Framework. The test c
 The versioning of this image follows the one of Robot Framework:
 
 Major version matches the one of Robot Framework
+
 Minor and patch versions are specific to this project (allows to update the versions of the other dependencies)
 
 The versions used are:
+
 Robot Framework 3.2.1
+
 Robot Framework Requests 2.24.0
+
 Robot Framework SeleniumLibrary 4.4.0
+
 Robot Framework JsonLibrary 0.7.0
 
+
 ## Folder Structure
+```
 -./
 -- resources
 ---  resources/keywords
@@ -25,12 +32,18 @@ Robot Framework JsonLibrary 0.7.0
 -- results
 -- suiteExecution
 -- tests
+```
 
 Resouces: Folder to put all files to help in tests execution
+
 Resources/keywords: Folder to create robot files to archiving the keywords used in tests
+
 Resources/payload: Folder to create robot files to archiving the payload used in tests
+
 results: Folder that robotFramework will create the reports execution files.
+
 suitExecution: Folder that will be all files to execution by docker.
+
 tests: Folder thar will archiving all tests files.
 
 ## Pre-Condictions
