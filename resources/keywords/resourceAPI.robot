@@ -14,5 +14,5 @@ Library               DateTime
 
 
 *** Variables ***
-${URL_BASE_API}           https://sandbox-code.biz.com.br
+${URL_BASE_API}           http://sandbox-code.biz.com.br
 
