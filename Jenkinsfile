@@ -14,6 +14,7 @@ pipeline{
         }
         stage('Test'){
             steps{
+                sh "chmod 700 ./suiteRun.sh"
                 sh "./suiteRun.sh"
             }
         }
