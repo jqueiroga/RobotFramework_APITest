@@ -9,7 +9,9 @@ pipeline{
         }
         stage('APITest'){
             steps{               
-                docker-compose up                
+                bash ''' #!/bin/bash
+                docker-compose up
+                '''            
             }
         }
         stage('UAT'){
