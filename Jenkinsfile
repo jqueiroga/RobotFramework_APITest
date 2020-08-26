@@ -9,7 +9,7 @@ pipeline{
         }
         stage('APITest'){
             steps{               
-                bash ''' #!/bin/bash
+                sh ''' #!/bin/bash
                 docker-compose up
                 '''            
             }
