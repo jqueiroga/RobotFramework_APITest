@@ -8,6 +8,12 @@ pipeline{
             }
         }
         stage('APITest'){
+            agent {
+                docker{
+                    image "robotframework_apitest"
+                }
+            }
+            
             steps{               
                 sh ''' #!/bin/bash
                 docker-compose up
