@@ -4,8 +4,8 @@ LABEL name="Docker build for API testing using the robot framework"
 
 RUN dnf upgrade -y && dnf install -y python37
 
-ADD . /results
-WORKDIR /results
+ADD . /apiTest
+WORKDIR /apiTest
 
 RUN pip3 install -r requirements.txt
 
