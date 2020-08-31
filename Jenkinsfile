@@ -20,17 +20,25 @@ pipeline{
         stage('ResultsPublish'){
             agent any
             
-            steps{
-                step([
-                        $class : 'RobotPublisher',
-                        outputPath : "./results/",
-                        outputFileName : "*.xml",
-                        disableArchiveOutput : false,
-                        passThreshold : 100,
-                        unstableThreshold: 95.0,
-                        otherFiles : "*.png",
-                    ])
-            }
+            steps {
+                    echo 'Testing...'
+                    script {
+                      step(
+                        [
+                          $class                    : 'RobotPublisher',
+                          outputPath                : '<insert/the/output/path>',
+                          outputFileName            : "*.xml",
+                          reportFileName            : "report.html",
+                          logFileName               : "log.html",
+                          disableArchiveOutput      : false,
+                          passThreshold             : 100,
+                          unstableThreshold         : 95.0,
+                          otherFiles                : "*.png"
+                        ]
+                      )
+                    }  
+                  }
+            
         }
         stage('UAT'){
             steps{
