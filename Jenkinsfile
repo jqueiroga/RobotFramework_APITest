@@ -18,7 +18,8 @@ pipeline{
             }
         }
         stage('ResultsPublish'){
-           
+            agent any
+            
             steps{
                 step([
                         $class : 'RobotPublisher',
