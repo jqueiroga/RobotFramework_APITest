@@ -12,6 +12,7 @@ pipeline{
             
             steps{               
                 sh ''' #!/bin/bash
+                docker container rm apirobot_docker | true
                 docker-compose up
                 '''            
             }
