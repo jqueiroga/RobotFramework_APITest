@@ -23,7 +23,7 @@ pipeline{
             steps{
                 step([
                         $class : 'RobotPublisher',
-                        outputPath : "./results/logs/",
+                        outputPath : "./results/",
                         outputFileName : "*.xml",
                         disableArchiveOutput : false,
                         passThreshold : 100,
