@@ -4,6 +4,7 @@ services:
         image: robotframewoek_apitest:latest
         build: .
         volumes: 
+            - ./:/apiTest
             - ./results:/results
         ports: 
             - 8000:8000
