@@ -17,6 +17,20 @@ pipeline{
                 '''            
             }
         }
+        stage('ResultsPublish'){
+           
+            steps{
+                step([
+                        $class : 'RobotPublisher',
+                        outputPath : outputDirectory,
+                        outputFileName : "/results/logs/*.xml",
+                        disableArchiveOutput : false,
+                        passThreshold : 100,
+                        unstableThreshold: 95.0,
+                        otherFiles : "/results/logs/*.png",
+                    ])
+            }
+        }
         stage('UAT'){
             steps{
                 echo "Wait for User Acceptance"
