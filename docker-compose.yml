@@ -4,8 +4,7 @@ services:
         image: robotframewoek_apitest:latest
         build: .
         volumes: 
-            - .:/apiTest
-            - ./results:/apiTest/results
+            - ./results:/results
         ports: 
             - 8000:8000
         container_name: apirobot_docker
