@@ -8,11 +8,7 @@ pipeline{
             }
         }
         stage('APITest'){
-            agent {
-                docker{
-                    image "robotframework_apitest"
-                }
-            }
+            agent any
             
             steps{               
                 sh ''' #!/bin/bash
