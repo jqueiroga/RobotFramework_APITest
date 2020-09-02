@@ -1,3 +1,3 @@
 #!/bin/sh
 
-robot -d ./logs ./tests/authorizationAPI.robot
+robot -d ./results ./tests/authorizationAPI.robot
