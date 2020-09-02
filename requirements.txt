@@ -1,4 +1,4 @@
-robotframework==2.1.2
+robotframework==2.8.2
 requests
 robotframework-httplibrary
 robotframework-requests
