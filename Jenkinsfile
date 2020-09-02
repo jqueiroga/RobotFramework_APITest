@@ -13,8 +13,8 @@ pipeline{
             steps{               
                 sh ''' #!/bin/bash                
                 docker container rm apirobot_docker | true
-                robot --version
                 docker-compose up
+                robot --version
                 '''            
             }
         }
