@@ -5,6 +5,8 @@ Resource            ../resources/base.robot
 
 Suite Setup           Conectar a bizSandboxAPI
 
+Test Teardown
+
 
 *** Test Cases ***
 Loading Login Screen
