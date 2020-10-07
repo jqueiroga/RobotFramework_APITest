@@ -57,16 +57,3 @@ Validando API de verificação que solicitação de minha senha já foi solicada
     Enviar requisição de esqueci minha senha via "email"   
     Conferir o status code    400
     Verificar que já foi solicitado envio de token por "sms"
-
-Validar API de Current Time
-    Login Sucess
-    Enviar requisição de currentTime
-    Conferir o status code    200 
-
-
-*** Keywords ***
-Login Sucess
-    Validar o CPF "${CPF_USER}"
-    Conferir o status code    200
-    Enviar requisição de Login do usuário
-    Conferir o status code    200

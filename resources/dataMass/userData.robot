@@ -7,9 +7,7 @@ ${CPF_USER}                97604451829
 ${PASSWORD}                123456
 ${ACCESS_TOKEN}            0
 ${USER_ID}                 0
-#Account variable response to ../issuer/account/?document={{cpf}}
-${ACCOUNT_ID}              account_id
-
+${ACCOUNT_ID}              123456789
 &{VIRTUAL_KEYBOARD}        btn0=UUID_0
 ...                        btn1=UUID_1
 ...                        btn2=UUID_2

@@ -1,0 +1,29 @@
+{
+    "Validate return code 200": {
+        "url": "invoice/{account_id}/current",
+        "tipo": "GET",
+        "parametro": "",
+        "headers": {
+            "Ocp-Apim-Subscription-Key": "7929bc5aed4c4ff1b1d149c48470cda1",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRjN2RkNWU3LWFjZjAtNGRjNS05YWUzLTMxN2QzMDVkZjVkNCIsImp0aSI6IjFjNmYwYmNkLTNiNmEtNGE1ZC04OTRmLWZjMTA5M2FlMmY5NCIsImVtYWlsIjoibWFyY29zYXRhbmFrYUBnbWFpbC5jb20iLCJJZCI6IjRjN2RkNWU3LWFjZjAtNGRjNS05YWUzLTMxN2QzMDVkZjVkNCIsIlBhcnRuZXJJZCI6IjMzNTE3NDZiLTBlZGQtNDU3ZS05Y2UwLTdmZjU1ZTZkOTNkNCIsIlBhcnRuZXJEb2N1bWVudCI6IjYwODUwMjI5MDAwMTQ3IiwiUGxhdGZvcm1JZCI6IjMzNTE3NDZiLTBlZGQtNDU3ZS05Y2UwLTdmZjU1ZTZkOTNkNCIsIlBlcnNvbklkIjoiNGM3ZGQ1ZTctYWNmMC00ZGM1LTlhZTMtMzE3ZDMwNWRmNWQ0IiwiQ3BmIjoiOTc2MDQ0NTE4MjkiLCJQaG9uZSI6IjgzOTg4Nzg2ODAwIiwiUGhvdG8iOiIiLCJzdWIiOiJMYXJhIFZhbmVzc2EgTG91aXNlIE1vbnRlaXJvIiwicm9sZSI6IkFkbWluaXN0cmF0b3IiLCJwZXJtaXNzaW9ucyI6WyJBZG1pbmlzdHJhdG9yLVJlYWQiLCJBZG1pbmlzdHJhdG9yLVdyaXRlIiwiQWRtaW5pc3RyYXRvci1SZXBvcnQiLCJBZG1pbmlzdHJhdG9yLURlbGV0ZSIsIkFkbWluaXN0cmF0b3ItVXBkYXRlIl0sIklzc3VlcnMiOlsie1wiSXNzdWVySWRcIjo3LFwiQnJhbmNoT2ZmaWNlSWRcIjoxLFwiUHJvZHVjdElkXCI6ODQsXCJBZmZpbml0eUdyb3VwSWRcIjowfSIsIntcIklzc3VlcklkXCI6MyxcIkJyYW5jaE9mZmljZUlkXCI6MSxcIlByb2R1Y3RJZFwiOjU3LFwiQWZmaW5pdHlHcm91cElkXCI6MH0iLCJ7XCJJc3N1ZXJJZFwiOjMsXCJCcmFuY2hPZmZpY2VJZFwiOjEsXCJQcm9kdWN0SWRcIjo2NSxcIkFmZmluaXR5R3JvdXBJZFwiOjB9Iiwie1wiSXNzdWVySWRcIjo3LFwiQnJhbmNoT2ZmaWNlSWRcIjoxLFwiUHJvZHVjdElkXCI6ODYsXCJBZmZpbml0eUdyb3VwSWRcIjowfSIsIntcIklzc3VlcklkXCI6NyxcIkJyYW5jaE9mZmljZUlkXCI6MSxcIlByb2R1Y3RJZFwiOjg1LFwiQWZmaW5pdHlHcm91cElkXCI6Mn0iLCJ7XCJJc3N1ZXJJZFwiOjcsXCJCcmFuY2hPZmZpY2VJZFwiOjEsXCJQcm9kdWN0SWRcIjo4MyxcIkFmZmluaXR5R3JvdXBJZFwiOjB9Il0sIm5iZiI6MTYwMTk2MTk2NSwiZXhwIjoxNjAxOTc2MzY1LCJpYXQiOjE2MDE5NjE5NjUsImlzcyI6IkJJWi1BVVRILUFQSSIsImF1ZCI6IkJJWi1FQ09TWVNURU0ifQ.KnTf4XEdzq74sGKAIckrg0P8_hF3IEy4R4c3SWUh-68"
+        },
+        "body": "",
+        "response": {
+            "totalAmount": 0.0,
+            "average": 0.0,
+            "invoices": [
+                {
+                    "accountId": "string",
+                    "period": 0,
+                    "closedDate": "string",
+                    "dueDate": "string",
+                    "invoiceAmount": 0.0,
+                    "status": "string",
+                    "statusPayment": "string",
+                    "invoiceInstallmentAvaliable": true
+                }
+            ]
+        }
+    }
+}

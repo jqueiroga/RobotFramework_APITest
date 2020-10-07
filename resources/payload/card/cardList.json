@@ -1,0 +1,64 @@
+{
+    "Validate return code 200": {
+        "url": "issuer/card/{account_id}?statusId=7&documentTypeId=1&document={cpf}",
+        "tipo": "GET",
+        "parametro": {
+            "statusId": "7",
+            "documenttypeid": "1",
+            "document": "{cpf}"
+        },
+        "headers": {
+            "Ocp-Apim-Subscription-Key": "7929bc5aed4c4ff1b1d149c48470cda1",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRjN2RkNWU3LWFjZjAtNGRjNS05YWUzLTMxN2QzMDVkZjVkNCIsImp0aSI6IjFjNmYwYmNkLTNiNmEtNGE1ZC04OTRmLWZjMTA5M2FlMmY5NCIsImVtYWlsIjoibWFyY29zYXRhbmFrYUBnbWFpbC5jb20iLCJJZCI6IjRjN2RkNWU3LWFjZjAtNGRjNS05YWUzLTMxN2QzMDVkZjVkNCIsIlBhcnRuZXJJZCI6IjMzNTE3NDZiLTBlZGQtNDU3ZS05Y2UwLTdmZjU1ZTZkOTNkNCIsIlBhcnRuZXJEb2N1bWVudCI6IjYwODUwMjI5MDAwMTQ3IiwiUGxhdGZvcm1JZCI6IjMzNTE3NDZiLTBlZGQtNDU3ZS05Y2UwLTdmZjU1ZTZkOTNkNCIsIlBlcnNvbklkIjoiNGM3ZGQ1ZTctYWNmMC00ZGM1LTlhZTMtMzE3ZDMwNWRmNWQ0IiwiQ3BmIjoiOTc2MDQ0NTE4MjkiLCJQaG9uZSI6IjgzOTg4Nzg2ODAwIiwiUGhvdG8iOiIiLCJzdWIiOiJMYXJhIFZhbmVzc2EgTG91aXNlIE1vbnRlaXJvIiwicm9sZSI6IkFkbWluaXN0cmF0b3IiLCJwZXJtaXNzaW9ucyI6WyJBZG1pbmlzdHJhdG9yLVJlYWQiLCJBZG1pbmlzdHJhdG9yLVdyaXRlIiwiQWRtaW5pc3RyYXRvci1SZXBvcnQiLCJBZG1pbmlzdHJhdG9yLURlbGV0ZSIsIkFkbWluaXN0cmF0b3ItVXBkYXRlIl0sIklzc3VlcnMiOlsie1wiSXNzdWVySWRcIjo3LFwiQnJhbmNoT2ZmaWNlSWRcIjoxLFwiUHJvZHVjdElkXCI6ODQsXCJBZmZpbml0eUdyb3VwSWRcIjowfSIsIntcIklzc3VlcklkXCI6MyxcIkJyYW5jaE9mZmljZUlkXCI6MSxcIlByb2R1Y3RJZFwiOjU3LFwiQWZmaW5pdHlHcm91cElkXCI6MH0iLCJ7XCJJc3N1ZXJJZFwiOjMsXCJCcmFuY2hPZmZpY2VJZFwiOjEsXCJQcm9kdWN0SWRcIjo2NSxcIkFmZmluaXR5R3JvdXBJZFwiOjB9Iiwie1wiSXNzdWVySWRcIjo3LFwiQnJhbmNoT2ZmaWNlSWRcIjoxLFwiUHJvZHVjdElkXCI6ODYsXCJBZmZpbml0eUdyb3VwSWRcIjowfSIsIntcIklzc3VlcklkXCI6NyxcIkJyYW5jaE9mZmljZUlkXCI6MSxcIlByb2R1Y3RJZFwiOjg1LFwiQWZmaW5pdHlHcm91cElkXCI6Mn0iLCJ7XCJJc3N1ZXJJZFwiOjcsXCJCcmFuY2hPZmZpY2VJZFwiOjEsXCJQcm9kdWN0SWRcIjo4MyxcIkFmZmluaXR5R3JvdXBJZFwiOjB9Il0sIm5iZiI6MTYwMTk2MTk2NSwiZXhwIjoxNjAxOTc2MzY1LCJpYXQiOjE2MDE5NjE5NjUsImlzcyI6IkJJWi1BVVRILUFQSSIsImF1ZCI6IkJJWi1FQ09TWVNURU0ifQ.KnTf4XEdzq74sGKAIckrg0P8_hF3IEy4R4c3SWUh-68"
+        },
+        "body": "",
+        "response": [
+            {
+                "Id": "00000300-7015-0000-1435-700000000001",
+                "IssuerId": 3,
+                "Issuer": "OMNI CFI",
+                "BranchOfficeId": 1,
+                "BranchOffice": "MATRIZ",
+                "ProductId": 57,
+                "Product": "TRIGG VISA",
+                "AffinityGroupId": 12,
+                "AffinityGroup": "Trigg 6,90",
+                "Document": "97604451829",
+                "DocumentType": "CPF",
+                "DocumentTypeId": 1,
+                "AccountId": "0003-00001-57-000143570",
+                "AccountNumber": 143570,
+                "CardId": "0003-00001-57-000143570-0000001",
+                "SequenceCard": 1,
+                "CardTypeId": 7,
+                "CardType": "TRIGG MULHER MARAVILHA",
+                "PlasticColourId": 5,
+                "PlasticColour": "MULHER MARAVILHA",
+                "CardHolderType": "TITULAR",
+                "CardNumberMask": "4722 80XX XXXX 6444",
+                "CardName": "LUCIANA A OLIVEIRA",
+                "ExpirationDate": "2024-04-01T00:00:00Z",
+                "IncludeDate": "2019-04-16T00:00:00Z",
+                "StatusId": 7,
+                "Status": "ATIVO",
+                "StatusDate": "2019-04-29T12:59:53Z",
+                "LevelAccount": "ROOT",
+                "YesOrNoOverLimit": "Y",
+                "CardSequenceNumber": 1,
+                "ShippingType": "DELIVERY",
+                "EmbossingCompany": "VALID EMBOSSADORA",
+                "DeliveryCompany": "Delivery Creditus",
+                "ControlDeliveryNumber": 2254447,
+                "EmbossingPartId": 23,
+                "DeliveryPartId": 10,
+                "ReceiverName": "ISS00003CA57DI081697.IN",
+                "ReceiverDocument": 1.0,
+                "DeliveryDate": "2019-04-16T00:00:00Z",
+                "Photo": "0",
+                "VirtualCard": "N",
+                "Associated": true
+            }
+        ]
+    }
+}
